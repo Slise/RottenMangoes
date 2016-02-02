@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class Movie;
+#import "MapViewController.h"
 
 @interface DetailedViewController : UIViewController
 

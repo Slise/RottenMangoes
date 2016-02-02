@@ -87,6 +87,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmD-0T-syn">
+                                <rect key="frame" x="349" y="72" width="130" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Show Theatre Location"/>
+                                <connections>
+                                    <segue destination="8Tb-W6-nCl" kind="show" identifier="segueToMap" id="CHw-pb-ain"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -95,6 +103,7 @@
                             <constraint firstAttribute="trailing" secondItem="Sj3-4Z-5Mr" secondAttribute="trailing" constant="279" id="JUf-ER-hNo"/>
                             <constraint firstItem="9la-AQ-gJW" firstAttribute="centerX" secondItem="OHp-S3-q0c" secondAttribute="centerX" id="S8x-yk-YFn"/>
                             <constraint firstItem="Sj3-4Z-5Mr" firstAttribute="leading" secondItem="OHp-S3-q0c" secondAttribute="leading" constant="121" id="Tb9-dW-Hza"/>
+                            <constraint firstItem="XmD-0T-syn" firstAttribute="trailing" secondItem="ry9-2u-GLV" secondAttribute="trailing" id="ZDi-hP-c1M"/>
                             <constraint firstAttribute="trailing" secondItem="ry9-2u-GLV" secondAttribute="trailing" constant="121" id="eoZ-AL-kBC"/>
                             <constraint firstItem="ry9-2u-GLV" firstAttribute="top" secondItem="GyZ-Tm-ecs" secondAttribute="bottom" constant="45" id="g9o-KH-Dah"/>
                             <constraint firstAttribute="trailing" secondItem="Sj3-4Z-5Mr" secondAttribute="trailing" constant="121" id="guN-6N-clg"/>
@@ -102,6 +111,7 @@
                             <constraint firstItem="ry9-2u-GLV" firstAttribute="leading" secondItem="OHp-S3-q0c" secondAttribute="leading" constant="121" id="iW1-ES-pqz"/>
                             <constraint firstItem="Sj3-4Z-5Mr" firstAttribute="centerX" secondItem="OHp-S3-q0c" secondAttribute="centerX" id="olT-mk-QgV"/>
                             <constraint firstItem="9la-AQ-gJW" firstAttribute="top" secondItem="ry9-2u-GLV" secondAttribute="bottom" constant="26" id="pGD-hd-okK"/>
+                            <constraint firstItem="XmD-0T-syn" firstAttribute="top" secondItem="GyZ-Tm-ecs" secondAttribute="bottom" constant="8" id="vpR-r3-Z3w"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -120,6 +130,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fGc-ba-beT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3376" y="169"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="xl7-MN-QB5">
+            <objects>
+                <viewController id="8Tb-W6-nCl" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ycN-7O-eQ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="YHf-95-5wc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gYk-8b-Dmo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dyz-fR-JU9">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dyz-fR-JU9" firstAttribute="top" secondItem="ycN-7O-eQ8" secondAttribute="bottom" id="E4V-zS-9ZO"/>
+                            <constraint firstItem="YHf-95-5wc" firstAttribute="top" secondItem="dyz-fR-JU9" secondAttribute="bottom" id="UUB-Be-Ygb"/>
+                            <constraint firstItem="dyz-fR-JU9" firstAttribute="leading" secondItem="gYk-8b-Dmo" secondAttribute="leading" id="WvQ-n4-bPU"/>
+                            <constraint firstAttribute="trailing" secondItem="dyz-fR-JU9" secondAttribute="trailing" id="v3d-yC-tDv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="dyz-fR-JU9" id="Keo-Hh-kTs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Axs-As-Jqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4080" y="169"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jmB-gM-ef5">

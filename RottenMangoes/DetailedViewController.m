@@ -41,4 +41,13 @@
     [dataTask resume];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"segueToMap"]) {
+        
+        MapViewController *mapViewController = [segue destinationViewController];
+        mapViewController.movie = self.movie;
+    }
+}
+
 @end

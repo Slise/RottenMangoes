@@ -19,6 +19,11 @@
 		933AE5E61BF2733400DA17FD /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 933AE5E51BF2733400DA17FD /* Movie.m */; };
 		933AE5E91BF2A83D00DA17FD /* MoviePosterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 933AE5E81BF2A83D00DA17FD /* MoviePosterCollectionViewCell.m */; };
 		935A01611C602BD300837A50 /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 935A01601C602BD300837A50 /* ServerManager.m */; };
+		935A01641C613F3B00837A50 /* Theatre.m in Sources */ = {isa = PBXBuildFile; fileRef = 935A01631C613F3B00837A50 /* Theatre.m */; };
+		935A01661C61488600837A50 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935A01651C61488600837A50 /* CoreLocation.framework */; };
+		935A01681C61489F00837A50 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935A01671C61489F00837A50 /* MapKit.framework */; };
+		935A016B1C614D9700837A50 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 935A016A1C614D9700837A50 /* MapViewController.m */; };
+		935A016E1C614E4F00837A50 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 935A016D1C614E4F00837A50 /* LocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,14 @@
 		935A015E1C6021A900837A50 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		935A015F1C602BD300837A50 /* ServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerManager.h; sourceTree = "<group>"; };
 		935A01601C602BD300837A50 /* ServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerManager.m; sourceTree = "<group>"; };
+		935A01621C613F3B00837A50 /* Theatre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theatre.h; sourceTree = "<group>"; };
+		935A01631C613F3B00837A50 /* Theatre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theatre.m; sourceTree = "<group>"; };
+		935A01651C61488600837A50 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		935A01671C61489F00837A50 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		935A01691C614D9700837A50 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		935A016A1C614D9700837A50 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		935A016C1C614E4F00837A50 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		935A016D1C614E4F00837A50 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935A01681C61489F00837A50 /* MapKit.framework in Frameworks */,
+				935A01661C61488600837A50 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +109,8 @@
 		933AE5A21BF13A9A00DA17FD = {
 			isa = PBXGroup;
 			children = (
+				935A01671C61489F00837A50 /* MapKit.framework */,
+				935A01651C61488600837A50 /* CoreLocation.framework */,
 				933AE5AD1BF13A9A00DA17FD /* RottenMangoes */,
 				933AE5C71BF13A9A00DA17FD /* RottenMangoesTests */,
 				933AE5D21BF13A9A00DA17FD /* RottenMangoesUITests */,
@@ -119,14 +136,20 @@
 				933AE5B21BF13A9A00DA17FD /* AppDelegate.m */,
 				933AE5B41BF13A9A00DA17FD /* TheatreCollectionViewController.h */,
 				933AE5B51BF13A9A00DA17FD /* TheatreCollectionViewController.m */,
-				935A015F1C602BD300837A50 /* ServerManager.h */,
-				935A01601C602BD300837A50 /* ServerManager.m */,
 				933AE5E71BF2A83D00DA17FD /* MoviePosterCollectionViewCell.h */,
 				933AE5E81BF2A83D00DA17FD /* MoviePosterCollectionViewCell.m */,
 				930C51EA1BF301F20034287E /* DetailedViewController.h */,
 				930C51EB1BF301F20034287E /* DetailedViewController.m */,
+				935A01691C614D9700837A50 /* MapViewController.h */,
+				935A016A1C614D9700837A50 /* MapViewController.m */,
+				935A016C1C614E4F00837A50 /* LocationManager.h */,
+				935A016D1C614E4F00837A50 /* LocationManager.m */,
+				935A01621C613F3B00837A50 /* Theatre.h */,
+				935A01631C613F3B00837A50 /* Theatre.m */,
 				933AE5E41BF2733400DA17FD /* Movie.h */,
 				933AE5E51BF2733400DA17FD /* Movie.m */,
+				935A015F1C602BD300837A50 /* ServerManager.h */,
+				935A01601C602BD300837A50 /* ServerManager.m */,
 				933AE5B71BF13A9A00DA17FD /* Main.storyboard */,
 				933AE5BA1BF13A9A00DA17FD /* Assets.xcassets */,
 				933AE5BC1BF13A9A00DA17FD /* LaunchScreen.storyboard */,
@@ -296,9 +319,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				933AE5B61BF13A9A00DA17FD /* TheatreCollectionViewController.m in Sources */,
+				935A01641C613F3B00837A50 /* Theatre.m in Sources */,
 				933AE5B31BF13A9A00DA17FD /* AppDelegate.m in Sources */,
+				935A016B1C614D9700837A50 /* MapViewController.m in Sources */,
 				933AE5E61BF2733400DA17FD /* Movie.m in Sources */,
 				933AE5E91BF2A83D00DA17FD /* MoviePosterCollectionViewCell.m in Sources */,
+				935A016E1C614E4F00837A50 /* LocationManager.m in Sources */,
 				935A01611C602BD300837A50 /* ServerManager.m in Sources */,
 				930C51EC1BF301F20034287E /* DetailedViewController.m in Sources */,
 				933AE5B01BF13A9A00DA17FD /* main.m in Sources */,
